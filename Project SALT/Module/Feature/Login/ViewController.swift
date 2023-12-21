@@ -81,10 +81,10 @@ class ViewController: UIViewController {
             return
         }
         
-        dataSource?.login(email: email, password: "\(password)", completion: { results in
+        dataSource?.login(email: email, password: "\(password)", completion: { [weak self] results in
             switch results {
-            case .success(let _):
-                self.goToUserInfoPage()
+            case .success( _):
+                self?.goToUserInfoPage()
                 break
             case .failure(let failure):
                 break
@@ -94,6 +94,7 @@ class ViewController: UIViewController {
     
     private func goToUserInfoPage() {
         let userInfoController = UserInfoViewController()
+        userInfoController.remoteDataSource = UserRemoteDataSource()
         self.navigationController?.pushViewController(userInfoController, animated: true)
     }
 }
