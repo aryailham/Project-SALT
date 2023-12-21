@@ -83,12 +83,18 @@ class ViewController: UIViewController {
         
         dataSource?.login(email: email, password: "\(password)", completion: { results in
             switch results {
-            case .success(let success):
+            case .success(let _):
+                self.goToUserInfoPage()
                 break
             case .failure(let failure):
                 break
             }
         })
+    }
+    
+    private func goToUserInfoPage() {
+        let userInfoController = UserInfoViewController()
+        self.navigationController?.pushViewController(userInfoController, animated: true)
     }
 }
 
