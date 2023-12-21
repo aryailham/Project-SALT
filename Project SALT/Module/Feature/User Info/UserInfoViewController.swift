@@ -30,6 +30,7 @@ class UserInfoViewController: UIViewController {
     }
     
     private func setupView() {
+        self.title = "User Info"
         view.backgroundColor = .white
         
         view.addSubview(userInfoTableView)
