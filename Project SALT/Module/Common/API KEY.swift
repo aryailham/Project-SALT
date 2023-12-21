@@ -12,4 +12,5 @@ enum APIEndpoints: String {
     
     // MARK: - USER API
     case LOGIN_ENDPOINT = "/api/login"
+    case USER_INFO_ENDPOINT = "/api/users?page=2"
 }
