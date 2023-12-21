@@ -25,7 +25,7 @@ extension UserRemoteDataSource: LoginRemoteDataSource {
         }
         
         let parameters: Parameters = [
-//            "password": password,
+            "password": password,
             "email": email,
         ]
         
