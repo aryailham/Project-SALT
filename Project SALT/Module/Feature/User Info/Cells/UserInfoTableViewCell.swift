@@ -13,13 +13,20 @@ class UserInfoTableViewCell: UITableViewCell {
     // MARK: - UIKit
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
+        stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = 8
+        stackView.alignment = .center
         return stackView
     }()
     
     private lazy var profileView: UIImageView = {
         let imageView = UIImageView()
+        NSLayoutConstraint.activate([
+            imageView.heightAnchor.constraint(equalToConstant: 80),
+            imageView.widthAnchor.constraint(equalToConstant: 80)
+        ])
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
@@ -47,15 +54,24 @@ class UserInfoTableViewCell: UITableViewCell {
     private func setupView() {
         self.contentView.addSubview(stackView)
         
-        stackView.addArrangedSubview(profileView)
+        let imageContainerView = UIView()
+        imageContainerView.addSubview(profileView)
+        
+        stackView.addArrangedSubview(imageContainerView)
         stackView.addArrangedSubview(nameLabel)
         stackView.addArrangedSubview(emailLabel)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 16),
             stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
+            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -16),
+            profileView.topAnchor.constraint(equalTo: imageContainerView.topAnchor),
+            profileView.bottomAnchor.constraint(equalTo: imageContainerView.bottomAnchor),
+            profileView.centerXAnchor.constraint(equalTo: imageContainerView.centerXAnchor),
+            imageContainerView.heightAnchor.constraint(equalToConstant: 80),
+            imageContainerView.leadingAnchor.constraint(equalTo: stackView.leadingAnchor),
+            imageContainerView.trailingAnchor.constraint(equalTo: stackView.trailingAnchor),
         ])
     }
     
