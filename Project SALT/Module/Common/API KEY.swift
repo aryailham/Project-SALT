@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum API_KEY: String {
-    case BASE_URL = "https://reqres.in/"
+enum APIEndpoints: String {
+    case BASE_URL = "https://reqres.in"
     
     // MARK: - USER API
     case LOGIN_ENDPOINT = "/api/login"
