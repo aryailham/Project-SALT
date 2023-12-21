@@ -7,11 +7,6 @@
 
 import Foundation
 
-//enum APIResult<Success: Decodable> {
-//  case success(Success)
-//  case failure(APIError)
-//}
-
 struct LoginResponse: Codable {
     let token: String
 }
