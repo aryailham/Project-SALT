@@ -16,6 +16,11 @@
 		19E20F4C2B34990700461102 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19E20F4B2B34990700461102 /* Alamofire */; };
 		19E20F4E2B3499F700461102 /* API KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F4D2B3499F700461102 /* API KEY.swift */; };
 		19E20F502B349BF700461102 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F4F2B349BF700461102 /* LoginResponse.swift */; };
+		19E20F522B34A82800461102 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F512B34A82800461102 /* UserInfoViewController.swift */; };
+		19E20F552B34AA4E00461102 /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F542B34AA4E00461102 /* UserInfoTableViewCell.swift */; };
+		19E20F582B34AC7800461102 /* UserInfoResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F572B34AC7800461102 /* UserInfoResponses.swift */; };
+		19E20F5B2B34AD7900461102 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 19E20F5A2B34AD7900461102 /* AlamofireImage */; };
+		19E20F5E2B34ADEE00461102 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F5D2B34ADEE00461102 /* UIImageViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,10 @@
 		19E20F482B34985C00461102 /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
 		19E20F4D2B3499F700461102 /* API KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API KEY.swift"; sourceTree = "<group>"; };
 		19E20F4F2B349BF700461102 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		19E20F512B34A82800461102 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		19E20F542B34AA4E00461102 /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
+		19E20F572B34AC7800461102 /* UserInfoResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponses.swift; sourceTree = "<group>"; };
+		19E20F5D2B34ADEE00461102 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +46,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E20F4C2B34990700461102 /* Alamofire in Frameworks */,
+				19E20F5B2B34AD7900461102 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +110,7 @@
 		19E20F422B34979100461102 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				19E20F5C2B34ADDF00461102 /* Extensions */,
 				19E20F2D2B34903E00461102 /* SceneDelegate.swift */,
 				19E20F2B2B34903E00461102 /* AppDelegate.swift */,
 				19E20F4D2B3499F700461102 /* API KEY.swift */,
@@ -118,6 +129,8 @@
 		19E20F442B3497C800461102 /* User Info */ = {
 			isa = PBXGroup;
 			children = (
+				19E20F532B34AA3400461102 /* Cells */,
+				19E20F512B34A82800461102 /* UserInfoViewController.swift */,
 			);
 			path = "User Info";
 			sourceTree = "<group>";
@@ -143,8 +156,25 @@
 			isa = PBXGroup;
 			children = (
 				19E20F4F2B349BF700461102 /* LoginResponse.swift */,
+				19E20F572B34AC7800461102 /* UserInfoResponses.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		19E20F532B34AA3400461102 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				19E20F542B34AA4E00461102 /* UserInfoTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		19E20F5C2B34ADDF00461102 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19E20F5D2B34ADEE00461102 /* UIImageViewExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +195,7 @@
 			name = "Project SALT";
 			packageProductDependencies = (
 				19E20F4B2B34990700461102 /* Alamofire */,
+				19E20F5A2B34AD7900461102 /* AlamofireImage */,
 			);
 			productName = "Project SALT";
 			productReference = 19E20F282B34903E00461102 /* Project SALT.app */;
@@ -196,6 +227,7 @@
 			mainGroup = 19E20F1F2B34903E00461102;
 			packageReferences = (
 				19E20F4A2B34990700461102 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				19E20F592B34AD7900461102 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 19E20F292B34903E00461102 /* Products */;
 			projectDirPath = "";
@@ -224,9 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19E20F302B34903E00461102 /* ViewController.swift in Sources */,
+				19E20F522B34A82800461102 /* UserInfoViewController.swift in Sources */,
 				19E20F2C2B34903E00461102 /* AppDelegate.swift in Sources */,
 				19E20F502B349BF700461102 /* LoginResponse.swift in Sources */,
+				19E20F582B34AC7800461102 /* UserInfoResponses.swift in Sources */,
+				19E20F552B34AA4E00461102 /* UserInfoTableViewCell.swift in Sources */,
 				19E20F2E2B34903E00461102 /* SceneDelegate.swift in Sources */,
+				19E20F5E2B34ADEE00461102 /* UIImageViewExtensions.swift in Sources */,
 				19E20F4E2B3499F700461102 /* API KEY.swift in Sources */,
 				19E20F492B34985C00461102 /* UserRemoteDataSource.swift in Sources */,
 			);
@@ -453,6 +489,14 @@
 				version = 5.8.1;
 			};
 		};
+		19E20F592B34AD7900461102 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = exactVersion;
+				version = 4.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -460,6 +504,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 19E20F4A2B34990700461102 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		19E20F5A2B34AD7900461102 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19E20F592B34AD7900461102 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
