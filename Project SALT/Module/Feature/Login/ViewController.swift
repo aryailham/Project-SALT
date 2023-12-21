@@ -83,10 +83,9 @@ class ViewController: UIViewController {
         
         dataSource?.login(email: email, password: "\(password)", completion: { [weak self] results in
             switch results {
-            case .success( _):
+            case .success(_):
                 self?.goToUserInfoPage()
-                break
-            case .failure(let failure):
+            case .failure(_):
                 break
             }
         })
