@@ -14,6 +14,8 @@
 		19E20F352B34904000461102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19E20F342B34904000461102 /* Assets.xcassets */; };
 		19E20F492B34985C00461102 /* UserRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F482B34985C00461102 /* UserRemoteDataSource.swift */; };
 		19E20F4C2B34990700461102 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 19E20F4B2B34990700461102 /* Alamofire */; };
+		19E20F4E2B3499F700461102 /* API KEY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F4D2B3499F700461102 /* API KEY.swift */; };
+		19E20F502B349BF700461102 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E20F4F2B349BF700461102 /* LoginResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		19E20F342B34904000461102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E20F392B34904000461102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19E20F482B34985C00461102 /* UserRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRemoteDataSource.swift; sourceTree = "<group>"; };
+		19E20F4D2B3499F700461102 /* API KEY.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API KEY.swift"; sourceTree = "<group>"; };
+		19E20F4F2B349BF700461102 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 			children = (
 				19E20F2D2B34903E00461102 /* SceneDelegate.swift */,
 				19E20F2B2B34903E00461102 /* AppDelegate.swift */,
+				19E20F4D2B3499F700461102 /* API KEY.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		19E20F472B3497EB00461102 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				19E20F4F2B349BF700461102 /* LoginResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			files = (
 				19E20F302B34903E00461102 /* ViewController.swift in Sources */,
 				19E20F2C2B34903E00461102 /* AppDelegate.swift in Sources */,
+				19E20F502B349BF700461102 /* LoginResponse.swift in Sources */,
 				19E20F2E2B34903E00461102 /* SceneDelegate.swift in Sources */,
+				19E20F4E2B3499F700461102 /* API KEY.swift in Sources */,
 				19E20F492B34985C00461102 /* UserRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
