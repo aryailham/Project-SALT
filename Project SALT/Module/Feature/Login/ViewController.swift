@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    // MARK: - UI Components
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
         let textField = UITextField()
         textField.placeholder = "Enter email"
         textField.borderStyle = .roundedRect
+        textField.autocapitalizationType = .none
         return textField
     }()
     
@@ -47,6 +48,10 @@ class ViewController: UIViewController {
         return button
     }()
     
+    // MARK: - Variables
+    var dataSource: LoginRemoteDataSource?
+    
+    // MARK: - Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupView()
@@ -72,7 +77,24 @@ class ViewController: UIViewController {
     }
     
     @objc func submitTapped(_ sender: UIButton!) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            return
+        }
         
+        dataSource?.login(email: email, password: "\(password)", completion: { [weak self] results in
+            switch results {
+            case .success(_):
+                self?.goToUserInfoPage()
+            case .failure(_):
+                break
+            }
+        })
+    }
+    
+    private func goToUserInfoPage() {
+        let userInfoController = UserInfoViewController()
+        userInfoController.remoteDataSource = UserRemoteDataSource()
+        self.navigationController?.pushViewController(userInfoController, animated: true)
     }
 }
 

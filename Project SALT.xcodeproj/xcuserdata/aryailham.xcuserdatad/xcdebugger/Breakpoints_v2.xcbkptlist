@@ -8,7 +8,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B9DC6BF1-F7CE-4C17-B4AB-6EA02B43161A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Project SALT/ViewController.swift"
@@ -18,6 +18,102 @@
             endingLineNumber = "75"
             landmarkName = "submitTapped(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4A3A18D-2E77-49F6-8531-166AE44F14F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project SALT/Module/Feature/Login/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "submitTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E4A3A18D-2E77-49F6-8531-166AE44F14F8 - 1fbd2264c198cb25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Project_SALT.LoginResponse, Swift.Error&gt;) -&gt; () in Project_SALT.ViewController.submitTapped(Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "Project SALT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aryailham/Documents/TEST%20SALT/Project%20SALT/Project%20SALT/Module/Feature/Login/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "417">
+               </Location>
+               <Location
+                  uuid = "E4A3A18D-2E77-49F6-8531-166AE44F14F8 - 1fbd2264c198cb25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Project_SALT.LoginResponse, Swift.Error&gt;) -&gt; () in Project_SALT.ViewController.submitTapped(Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "Project SALT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aryailham/Documents/TEST%20SALT/Project%20SALT/Project%20SALT/Module/Feature/Login/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67D5B512-CF4D-4E58-B0A6-15EB2FB8BA71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Project SALT/Module/Feature/Login/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "submitTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "67D5B512-CF4D-4E58-B0A6-15EB2FB8BA71 - 1fbd2264c198cb63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Project_SALT.LoginResponse, Swift.Error&gt;) -&gt; () in Project_SALT.ViewController.submitTapped(Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "Project SALT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aryailham/Documents/TEST%20SALT/Project%20SALT/Project%20SALT/Module/Feature/Login/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "67D5B512-CF4D-4E58-B0A6-15EB2FB8BA71 - 1fbd2264c198cb63"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Project_SALT.LoginResponse, Swift.Error&gt;) -&gt; () in Project_SALT.ViewController.submitTapped(Swift.Optional&lt;__C.UIButton&gt;) -&gt; ()"
+                  moduleName = "Project SALT"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aryailham/Documents/TEST%20SALT/Project%20SALT/Project%20SALT/Module/Feature/Login/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "175">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
