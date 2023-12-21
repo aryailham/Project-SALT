@@ -27,6 +27,7 @@ class UserInfoTableViewCell: UITableViewCell {
             imageView.widthAnchor.constraint(equalToConstant: 80)
         ])
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.cornerRadius = 16
         return imageView
     }()
     
