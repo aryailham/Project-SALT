@@ -19,6 +19,8 @@ class UserInfoViewController: UIViewController {
     }()
     
     // MARK: Variables
+    var remoteDataSource: UserInfoRemoteDataSource?
+    var userInfoData: [UserInfo]?
     
     // MARK: Functions
     override func viewDidLoad() {
@@ -41,18 +43,31 @@ class UserInfoViewController: UIViewController {
     }
     
     private func getUserList() {
-        
+        self.remoteDataSource?.getUserList(completion: { result in
+            switch result {
+            case .success(let userInfos):
+                self.userInfoData = userInfos.userInfo
+                DispatchQueue.main.async { [weak self] in
+                    self?.userInfoTableView.reloadData()
+                }
+            case .failure(let failure):
+                break
+            }
+        })
     }
 }
 
 extension UserInfoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return userInfoData?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserInfoTableViewCell.ID, for: indexPath) as? UserInfoTableViewCell, let userInfos = userInfoData else {
+            return UITableViewCell()
+        }
+        
+        cell.setupData(user: userInfos[indexPath.row])
+        return cell
     }
-    
-    
 }
